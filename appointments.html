@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Appointments | Dr. Harpreet</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Dr. Harpreet</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="appointments.html">Appointments</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Book an appointment</h1>
+      <p class="muted">Choose a time and share a brief reason for visit. The team will confirm by email/SMS.</p>
+
+      <form class="form" action="https://formsubmit.co/harpreet@example.com" method="POST">
+        <input type="hidden" name="_subject" value="New Appointment Request" />
+        <div class="form-row">
+          <input required type="text" name="name" placeholder="Full name" />
+          <input required type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-row">
+          <input required type="tel" name="phone" placeholder="Phone" />
+          <input required type="date" name="date" />
+        </div>
+        <textarea required name="reason" rows="6" placeholder="Reason for visit"></textarea>
+        <button class="btn primary" type="submit">Request appointment</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year"></span> Clinic of Dr. Harpreet</p></div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

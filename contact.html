@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Dr. Harpreet</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Dr. Harpreet</a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="appointments.html">Appointments</a>
+      <a class="active btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="muted">Clinic hours: Mon–Fri 9:00–17:00 · Address: 123 Wellness Road</p>
+      <form class="form" action="https://formsubmit.co/harpreet@example.com" method="POST">
+        <input type="hidden" name="_subject" value="Clinic Contact Message" />
+        <div class="form-row">
+          <input required type="text" name="name" placeholder="Full name" />
+          <input required type="email" name="email" placeholder="Email" />
+        </div>
+        <textarea required name="message" rows="6" placeholder="Message"></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© <span id="year"></span> Clinic of Dr. Harpreet</p></div>
+</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
